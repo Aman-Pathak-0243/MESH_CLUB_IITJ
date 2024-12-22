@@ -1,0 +1,43 @@
+MESH_CLUB_WEBSITE/
+│
+├── public/
+│   ├── css/
+│   │   └── styles.css
+│   ├── js/
+│   │   └── script.js
+│   └── images/
+│       ├── logo.png
+│       └── teams/
+│           ├── team2021-22/
+│           │   ├── member1.jpg
+│           │   └── member2.jpg
+│           ├── team2022-23/
+│           │   ├── member1.jpg
+│           │   └── member2.jpg
+│           ├── team2023-24/
+│           │   ├── member1.jpg
+│           │   └── member2.jpg
+│           └── current/
+│               ├── member1.jpg
+│               └── member2.jpg
+│
+├── views/
+│   ├── partials/
+│   │   ├── navbar.ejs
+│   │   └── footer.ejs
+│   ├── index.ejs
+│   ├── upcoming-events.ejs
+│   ├── past-events.ejs
+│   ├── teams/
+│   │   ├── team2021-22.ejs
+│   │   ├── team2022-23.ejs
+│   │   ├── team2023-24.ejs
+│   │   └── current.ejs
+│   |
+│   └── thank-you.ejs
+│
+├── .env
+├── .gitignore
+├── app.js
+├── package.json
+└── package-lock.json

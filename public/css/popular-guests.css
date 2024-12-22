@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Luxurious+Script&family=Poppins&display=swap');
+@import url('https://fonts.cdnfonts.com/css/maghrib');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #E3E6E6;
+}
+
+body > h1 {
+    font-family: 'Bebas Neue';
+    font-weight: 600;
+    font-size: 10vw;
+    position: relative;
+    margin-top: 8vw;
+    text-align: center;
+}
+
+body > h1 span {
+    position: absolute;
+    color: #00949D;
+    font-weight: 500;
+    font-size: 15vw;
+    font-family: 'Maghrib', sans-serif;
+    top: -78%;
+    left: 43%;
+    text-shadow: 5px 20px 10px rgba(0, 0, 0, 0.3);
+}
+
+.m-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2vw;
+    height: 100%;
+    width: 80vw;
+    margin: 5vw 10vw;
+    position: relative;
+}
+
+.m-card {
+    width: 48%;
+    height: 18vw;
+    padding: 2vw;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.m-card .image {
+    height: 15vw;
+    width: 15vw;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.m-card .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.m-card .dets h2 {
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+
+.m-card .dets p {
+    font-family: 'Poppins';
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 2vw;
+    gap: 1vw;
+}
+
+.social-icons a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.8vw;
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 3vw;
+    width: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.15s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+.social-icons a:nth-child(1):hover {
+    background-color: black;
+}
+
+.social-icons a:nth-child(2):hover {
+    background-color: #df0064;
+}
+
+.social-icons a:nth-child(3):hover {
+    background-color: #0077B5;
+}

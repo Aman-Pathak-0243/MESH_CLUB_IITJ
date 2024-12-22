@@ -1,0 +1,534 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Luxurious+Script&family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.header {
+    background-color: #343a40; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #007bff; /* Primary color */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 5px 10px black; */
+}
+
+.navbar * {
+    font-family: 'Poppins';
+    font-size: 1vw;
+}
+
+.navbar-brand {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1);
+    color: #f8f9fa;
+}
+
+.navbar-brand img {
+    width: 4vw; /* Adjusted logo size */
+    margin: 0 2vw;
+}
+
+.nav-item {
+    color: #ffffff;
+    margin: 0 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-item:hover {
+    color: #f8f9fa;
+    transform: scale(1.05);
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+.navbar-nav a {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-item {
+    color: #ffffff;
+}
+
+.dropdown-item:hover {
+    background-color: #4950572f;
+    color: #ffffff;
+}
+
+/* Nav links animation */
+.nav-item a::after {
+    text-decoration: none;
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 1px;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.nav-item a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 2rem;
+}
+
+.hero-section h2,
+.hero-section p {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hero-section h2:hover,
+.hero-section p:hover {
+    transform: scale(1.1) translateY(-5px); /* Enlarges and moves text up */
+    color: #5e1919; /* Optional: Change text color on hover */
+}
+
+.hero-section h2 {
+    font-size: 4rem; /* Larger font size for better visibility */
+    font-weight: 700;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+    margin-bottom: 1.5rem;
+}
+
+.hero-section p {
+    font-size: 1.75rem; /* Increased font size */
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.dynamic-letters {
+    font-size: 4rem; /* Adjust size */
+    position: absolute;
+    right: 0; /* Aligns to the right */
+    top: 50%; /* Vertically centers */
+    transform: translateY(-50%); /* Center alignment */
+}
+
+/* About Section Styles */
+.about {
+    background-color: #95e0e4;
+    padding: 4rem 2rem; /* Added padding for more spacing */
+    padding-top: 0;
+}
+
+.about-container {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    padding: 4rem 2rem; /* Adds padding */
+}
+
+.dynamic-letters {
+    margin-right: 20px; /* Spacing between dynamic letters and cards */
+    flex-shrink: 0; /* Prevents shrinking */
+    width: 300px; /* Adjust width as needed */
+}
+
+.cards {
+    flex-grow: 1; /* Allows cards to take remaining space */
+}
+
+/* Card Styles - General */
+.card, .team-card, .event-card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px; /* Ensure spacing between cards */
+}
+
+.card:hover, .team-card:hover, .event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+}
+
+.card img, .team-card img, .event-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #dddddd;
+    border-radius: 1rem; /* Enhanced border-radius */
+    object-fit: cover;
+}
+
+.card-title, .team-card .card-title, .event-card .card-title {
+    font-size: 1.5rem; /* Larger font size for titles */
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card-body, .team-card .card-body, .event-card .card-body {
+    padding: 2rem; /* Increased padding */
+    background-color: #ffffff;
+}
+
+.card-text, .team-card .card-text, .event-card .card-text {
+    font-size: 1rem;
+    color: #555555;
+    line-height: 1.6; /* Increased line-height for readability */
+}
+
+/* Card List Styles */
+.card-text ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.card-text li {
+    font-size: 1.1rem; /* Slightly larger font size */
+    line-height: 1.6; /* Increased line-height for readability */
+}
+/* Image Section Styles */
+.image-section {
+    margin: 20px 0;
+}
+
+.image-section .image-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Limits the maximum height */
+    object-fit: cover; /* Ensures the image covers the container */
+}
+
+.text-container {
+    margin-top: 10px; /* Adds spacing between the image and the text */
+    padding: 10px;
+}
+
+.blockquote {
+    font-size: 1.25rem; /* Adjusts font size */
+    margin-bottom: 0;
+}
+
+.blockquote-footer {
+    font-size: 1rem;
+    margin-top: 5px; /* Adds spacing above the footer text */
+}
+
+/* Ensure images and text stack vertically on small screens */
+@media (max-width: 768px) {
+    .image-section img {
+        max-height: 300px; /* Adjusts height for smaller screens */
+    }
+
+    .text-container {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    .image-section img {
+        max-height: 250px; /* Further adjustment for very small screens */
+    }
+
+    .text-container {
+        padding: 6px;
+    }
+}
+
+/* Ensure images stack vertically on small screens */
+@media (max-width: 768px) {
+    .card-img-top {
+        max-height: 300px; /* Adjusts height for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .card-img-top {
+        max-height: 250px; /* Further adjustment for very small screens */
+    }
+}
+
+/* Popular Guests Section */
+.popular-guests {
+    padding: 20px;
+}
+
+.guest-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.guest-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+}
+
+.guest-card img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.guest-info {
+    flex: 1;
+}
+
+.guest-info h2 {
+    margin: 0;
+}
+
+.guest-info p {
+    margin: 5px 0;
+}
+
+/* LinkedIn Icon */
+.linkedin-icon {
+    color: #0077b5;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.linkedin-icon:hover {
+    color: #005682;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    border-top: 3px solid #e0e0e0;
+    min-height: 16vw;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 4vw 0 4vw;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1vw;
+    margin: 0.1vw 0;
+}
+
+footer .logo {
+    width: 10vw;
+}
+
+footer .logo img {
+    height: 100%;
+}
+
+.footer-main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 2vw; */
+}
+
+.footer-main .social-icons {
+    font-size: 1.7vw;
+    display: flex;
+    gap: 1.2vw;
+}
+
+.footer-main .social-icons a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    transition: color 0.1s ease-in-out, border 0.1s ease-in-out;
+}
+
+.footer-main .social-icons i {
+    height: 3.1vw;
+    width: 3.1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-main .social-icons a:hover {
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+/* Scroll Effect */
+.card-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.card.sticky {
+    position: sticky;
+    top: 0;
+}
+
+/* Contact Page Styles */
+.contact-container {
+    position: relative;
+    padding: 20px;
+    border: 1px solid #1b0707;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.contact-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-container p {
+    margin-bottom: 1.5rem;
+    
+}
+.txt{
+    color: rgb(13, 14, 13);
+    background-color: #74797a;
+}
+.contact-container ul {
+    padding-left: 0;
+}
+
+.contact-container li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.contact-container a {
+    color: #00d0ff;
+    text-decoration: none;
+}
+
+.contact-container a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.google-form-btn {
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-brand {
+        margin-bottom: 0.5rem;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        margin: 0.5rem 0;
+    }
+
+    .dropdown-menu {
+        position: static;
+        float: none;
+    }
+
+    .feedback-form {
+        padding: 1rem;
+    }
+
+    .hero-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.25rem;
+    }
+
+    .navbar-brand img {
+        width: 100px; /* Adjusted logo size for small screens */
+    }
+
+    .header {
+        font-size: 1rem;
+    }
+
+    .footer {
+        font-size: 0.9rem;
+    }
+
+    .card, .team-card, .event-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.25rem;
+    }
+
+    .navbar-brand img {
+        width: 100px; /* Adjusted logo size for small screens */
+    }
+
+    .header {
+        font-size: 1rem;
+    }
+
+    .footer {
+        font-size: 0.9rem;
+    }
+}

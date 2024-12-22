@@ -1,0 +1,289 @@
+@import url('https://fonts.cdnfonts.com/css/maghrib');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.navbar {
+    box-shadow: none;
+}
+
+.cont {
+    width: 100%;
+    height: 88.5vh;
+    padding: 0.5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info {
+    background-color: #3E2093;
+    width: 36%;
+    border-radius: 10px;
+    height: 100%;
+    padding: 4vw 3.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.25) 14px 0px 28px, rgba(0, 0, 0, 0.15) 10px 0 10px;
+}
+
+.contact-info * {
+    color: white;
+}
+
+.contact-info h1 {
+    font-size: 3vw;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.contact-info .info {
+    margin-bottom:7vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3vw;
+}
+
+.contact-info .info p {
+    font-size: 1.25vw;
+}
+
+.contact-info .info i {
+    margin-right: 2vw;
+    font-size: 1.4vw;
+    color: #FA949D;
+}
+
+.social-icons {
+    font-size: 1.7vw;
+    display: flex;
+    gap: 1.2vw;
+}
+
+.social-icons a {
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: background-color 0.1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons i {
+    height: 3.1vw;
+    width: 3.1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a:nth-child(1):hover {
+    background-color: black;
+}
+
+.social-icons a:nth-child(2):hover {
+    background-color: #df0064;
+}
+
+.social-icons a:nth-child(3):hover {
+    background-color: #0077B5;
+}
+
+.social-icons a:nth-child(4):hover {
+    background-color: #F54336;
+}
+
+/* Form */
+
+.form {
+    width: 63%;
+    height: 100%;
+    padding: 4vw 5vw 10vw 5vw;
+}
+
+.form h1 {
+    font-weight: 700;
+    margin: 0;
+}
+
+.form p {
+    color: #7a7a7a;
+}
+
+.form form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vw;
+    margin-top: 3vw;
+}
+
+.name, .mail-phone {
+    display: flex;
+    gap: 3vw;
+}
+
+.input-field {
+    position: relative;
+    width: 100%;
+}
+
+.input-field label {
+    position: absolute;
+    top: 50%;
+    left: 0.2vw;
+    transform: translateY(-50%);
+    font-size: 1vw;
+    padding: 0 0.45vw;
+    pointer-events: none;
+    transition: 0.4s;
+}
+
+.input-field label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    transition: 0.4s;
+}
+
+.input-field label::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.input-field input, .input-field textarea {
+    width: 100%;
+    padding: 0.7vw;
+    outline: none;
+    background: transparent;
+    font-size: 1vw;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.input-field input:focus + label,
+.input-field input:valid + label,
+.input-field textarea:focus + label {
+    top: 0;
+    left: 10px;
+    background-color: #F7F7F7;
+    color: #555555;
+    padding: 0 7px;
+    font-size: 12px;
+}
+
+.recommendation textarea {
+    min-height: 10vw;
+    line-height: normal;
+    text-align: left;
+    vertical-align: top;
+    resize: none;
+}
+
+.recommendation label {
+    top: 10%;
+}
+
+.form form input[type="submit"] {
+    background-color: #3E2093;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin: 1.5vw 0;
+    padding: 0.8vw 2vw;
+    font-size: 1.1vw;    
+    border-radius: 10px;
+    margin-left: auto
+}
+
+@media (width < 1000px) {
+    .cont {
+        flex-direction: column;
+        padding: 3vw 7vw;
+        gap: 5vw
+    }
+
+    .contact-info, .form {
+        width: 100%;
+    }
+
+    .contact-info h1 {
+        font-size: 7vw;
+    }
+
+    .contact-info .info, .contact-info {
+        padding: 2vw 5vw;
+    }
+
+    .contact-info .info p {
+        font-size: 3vw;
+    }
+
+    .contact-info .info p i {
+        font-size: 4vw;
+    }
+
+    .contact-info .social-icons a {
+        height: 7vw;
+        width: 7vw;
+        font-size: 3.6vw;
+    }
+
+    .form h1 {
+        font-size: 6vw;
+    }
+
+    .form p {
+        font-size: 3vw;
+    }
+
+    .form form {
+        height: max-content;
+        gap: 6vw;
+    }
+
+    .form form .input-field label {
+        font-size: 3vw;
+        left: 2vw;
+    }
+
+    .form form input {
+        padding: 1.5vw;
+        font-size: 3vw;
+    }
+
+    .form form input[type="submit"] {
+        margin: 4vw 0 0 auto;
+        font-size: 3vw;
+    }
+
+    .form form textarea {
+        font-size: 3vw;
+    }
+}

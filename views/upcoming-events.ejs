@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events - MESH Club</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/events.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+
+</head>
+<body>
+    <%- include('partials/navbar') %>
+
+    <main class="container mt-4">
+        <h2>Upcoming Events</h2>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="event-card">
+                    <div class="event-banner" onclick="showModal(this)">
+                        <img src="/images/events/demofile.png" class="card-img-top" alt="Hackathon Banner">
+                    </div>
+                    <div class="event-description">
+                        <h5 class="card-title">Hackathon</h5>
+                        <p class="card-text">Date: September 15, 2024</p>
+                        <p class="card-text">Join us for an exciting hackathon where you can showcase your coding skills and collaborate with peers to solve real-world problems. Don't miss this opportunity to innovate and win exciting prizes!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 text-center">
+                <div class="event-card">
+                    <div class="event-banner" onclick="showModal(this)">
+                        <img src="/images/events/demofile.png" class="card-img-top" alt="Hackathon Banner">
+                    </div>
+                    <div class="event-description">
+                        <h5 class="card-title">Hackathon</h5>
+                        <p class="card-text">Date: September 15, 2024</p>
+                        <p class="card-text">Join us for an exciting hackathon where you can showcase your coding skills and collaborate with peers to solve real-world problems. Don't miss this opportunity to innovate and win exciting prizes!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 text-center">
+                <div class="event-card">
+                    <div class="event-banner" onclick="showModal(this)">
+                        <img src="/images/events/demofile.png" class="card-img-top" alt="Hackathon Banner">
+                    </div>
+                    <div class="event-description">
+                        <h5 class="card-title">Hackathon</h5>
+                        <p class="card-text">Date: September 15, 2024</p>
+                        <p class="card-text">Join us for an exciting hackathon where you can showcase your coding skills and collaborate with peers to solve real-world problems. Don't miss this opportunity to innovate and win exciting prizes!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 text-center">
+                <div class="event-card">
+                    <div class="event-banner" onclick="showModal(this)">
+                        <img src="/images/events/demofile.png" class="card-img-top" alt="Hackathon Banner">
+                    </div>
+                    <div class="event-description">
+                        <h5 class="card-title">Hackathon</h5>
+                        <p class="card-text">Date: September 15, 2024</p>
+                        <p class="card-text">Join us for an exciting hackathon where you can showcase your coding skills and collaborate with peers to solve real-world problems. Don't miss this opportunity to innovate and win exciting prizes!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 text-center">
+                <div class="event-card">
+                    <div class="event-banner" onclick="showModal(this)">
+                        <img src="/images/events/demofile.png" class="card-img-top" alt="Hackathon Banner">
+                    </div>
+                    <div class="event-description">
+                        <h5 class="card-title">Hackathon</h5>
+                        <p class="card-text">Date: September 15, 2024</p>
+                        <p class="card-text">Join us for an exciting hackathon where you can showcase your coding skills and collaborate with peers to solve real-world problems. Don't miss this opportunity to innovate and win exciting prizes!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 text-center">
+                <div class="event-card">
+                    <div class="event-banner" onclick="showModal(this)">
+                        <img src="/images/events/demofile.png" class="card-img-top" alt="Hackathon Banner">
+                    </div>
+                    <div class="event-description">
+                        <h5 class="card-title">Hackathon</h5>
+                        <p class="card-text">Date: September 15, 2024</p>
+                        <p class="card-text">Join us for an exciting hackathon where you can showcase your coding skills and collaborate with peers to solve real-world problems. Don't miss this opportunity to innovate and win exciting prizes!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 text-center">
+                <div class="event-card">
+                    <div class="event-banner" onclick="showModal(this)">
+                        <img src="/images/events/demofile.png" class="card-img-top" alt="Hackathon Banner">
+                    </div>
+                    <div class="event-description">
+                        <h5 class="card-title">Hackathon</h5>
+                        <p class="card-text">Date: September 15, 2024</p>
+                        <p class="card-text">Join us for an exciting hackathon where you can showcase your coding skills and collaborate with peers to solve real-world problems. Don't miss this opportunity to innovate and win exciting prizes!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal for Enlarged Image -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideModal()">&times;</span>
+            <img id="modalImage" src="" alt="Enlarged Banner">
+            <div class="instruction">Press <b>Esc</b> to close</div>
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/events.js"></script>
+</body>
+</html>

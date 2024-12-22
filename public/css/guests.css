@@ -1,0 +1,130 @@
+/* Event Card Container */
+.event-card {
+    display: flex; /* Use flexbox to layout children side by side */
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px; /* Ensure spacing between cards */
+    max-width: 1200px; /* Increase max-width */
+    margin: 0 auto; /* Center align the card horizontally */
+    padding: 15px; /* Increase padding */
+}
+
+/* Banner Image Styles */
+.event-banner {
+    flex: 1; /* Take up equal space as description */
+    overflow: hidden; /* Ensure no overflow */
+    cursor: pointer; /* Indicate clickable */
+}
+
+.event-banner img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 225px; /* Adjust max-height */
+    object-fit: cover; /* Cover the area of the div */
+}
+
+/* Description Styles */
+.event-description {
+    flex: 2; /* Take up more space than the banner */
+    padding: 1.5rem; /* Increase padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}
+
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8); /* Dark background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it’s above other content */
+}
+
+.modal-content {
+    position: relative;
+    max-width: 80vw; /* Set max width */
+    max-height: 80vh; /* Set max height */
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content img {
+    width: 32rem; 
+    height: auto; 
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+
+.instruction {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: #666;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .event-card {
+        flex-direction: column; /* Stack children vertically */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .event-banner {
+        width: 100%; /* Make the banner full width */
+    }
+
+    .event-banner img {
+        max-height: 150px; /* Adjust max-height for smaller screens */
+    }
+
+    .event-description {
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex; /*  flexbox layout */
+    align-items: center; /* Vertically align items  */
+    gap: 10px; /* Add space between icons */
+    margin-top: 1rem; /* Add space above social icons */
+}
+
+/* Style for the individual icon links */
+.social-icons a {
+    display: flex; /* Ensure that the icons are aligned properly */
+    align-items: center; /* Vertically align icons if needed */
+}
+
+/* Style for the icons themselves */
+.social-icons img {
+    width: 24px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align with text if needed */
+}

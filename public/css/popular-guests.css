@@ -72,10 +72,12 @@ body > h1 span {
 .m-card .dets h2 {
     font-weight: 600;
     font-family: 'Poppins';
+    font-size: 2vw;
 }
 
-.m-card .dets p {
+.m-card .dets ul li {
     font-family: 'Poppins';
+    font-size: 1vw;
 }
 
 .social-icons {
@@ -112,4 +114,39 @@ body > h1 span {
 
 .social-icons a:nth-child(3):hover {
     background-color: #0077B5;
+}
+
+@media (width < 1000px) {
+    .m-cards {
+        flex-direction: column;
+    }
+
+    .m-card {
+        width: 100%;
+        height: 30vw;
+        gap: 6vw;
+    }
+
+    .m-card .image {
+        height: 25vw;
+        width: 25vw;
+    }
+
+    .m-card .dets h2 {
+        font-size: 4vw;
+    }
+
+    .m-card .dets ul li {
+        font-size: 2.3vw;
+    }
+
+    .m-card .dets .social-icons {
+        margin-top: -3vw;
+    }
+
+    .m-card .dets .social-icons a {
+        height: 5vw;
+        width: 5vw;
+        font-size: 2.8vw;
+    }
 }

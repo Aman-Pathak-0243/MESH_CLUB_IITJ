@@ -86,3 +86,31 @@ body > h1 {
 .m-card:hover .image img {
     transform: scale(1.1);
 }
+
+@media (width < 1000px) {
+    body > h1 {
+        font-size: 13vw;
+    }
+
+    .m-card {
+        height: 30vw;
+        width: 80vw;
+    }
+
+    .m-card .image {
+        width: 25vw;
+    }
+
+    .m-card .dets h1 {
+        font-size: 4vw;
+    }
+
+    .m-card .dets p {
+        font-size: 2.3vw;
+    }
+
+    .m-card .dets p i {
+        font-size: 2.7vw;
+        top: 0.25vw;
+    }
+}

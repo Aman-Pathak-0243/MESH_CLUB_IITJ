@@ -54,6 +54,7 @@ body {
 
 .note {
     margin: 4vw 20vw 2vw 20vw;
+    font-family: 'Poppins', sans-serif;
 }
 
 .apply-btn {
@@ -70,4 +71,49 @@ button {
     outline: none;
     border-radius: 10px;
     margin-top: 4vw;
+}
+
+@media (width < 1000px) {
+    .hero-image {
+        height: 35vw;
+        width: 90vw;
+        margin: 2.5vw 5vw 5vw 5vw;
+    }
+
+    .hero-image h1 {
+        font-size: 4.8vw;
+    }
+
+    .intro h3 {
+        font-size: 5vw;
+    }
+
+    .intro p {
+        font-size: 3vw;
+    }
+
+    .section {
+        margin: 5vw 10vw;
+    }
+
+    .section h3 {
+        font-size: 5vw;
+    }
+
+    .section ul {
+        font-size: 3vw;
+    }
+
+    button {
+        font-size: 5vw;
+    }
+
+    .apply-btn {
+        margin-left: 30%;
+    }
+
+    .note {
+        font-size: 3vw;
+        margin: 10vw 8vw 5vw 8vw;
+    }
 }

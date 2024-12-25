@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upcoming Events - MESH Club</title>
+    <title>Past Events - MESH Club</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/events.css">
@@ -13,67 +13,49 @@
 <body>
     <%- include('partials/navbar') %>
 
-    <main class="container mt-4">
-        <h2>Upcoming Events</h2>
-        <div class="row">
-            <!-- Event Cards -->
-            <div class="col-md-6 mb-4">
-                <div class="event-card">
-                    <div class="event-banner" onclick="showModal(this)">
-                        <img src="/images/guests/guest1.png" class="card-img-top" alt="Hackathon Banner">
-                    </div>
-                    <div class="event-description">
-                        <h5 class="card-title">Hackathon</h5>
-                        <p class="card-text">Date: September 15, 2024</p>
-                        <p class="card-text">Join us for an exciting hackathon where you can showcase your coding skills and collaborate with peers to solve real-world problems. Don't miss this opportunity to innovate and win exciting prizes!</p>
-                    </div>
-                </div>
+    <div class="m-cards">
+        <div class="m-card" onclick="showModal(this)">
+            <div class="m-banner"><img src="/images/events/demofile.png" alt=""></div>
+            <div class="dets">
+                <h2>Ignite Your Entrepreneurial Spirit</h2>
+                <p>25th August 2024</p>
+                <p>A special talk by Mr. Vivek Raina, the visionary founder of Excitel Broadband and the driving force behind Launchpad Kashmi shared his invaluable insights on entrepreneurship, innovation, and leadership.</p>
             </div>
-            <div class="col-md-6 mb-4">
-                <div class="event-card">
-                    <div class="event-banner" onclick="showModal(this)">
-                        <img src="/images/events/demofile.png" class="card-img-top" alt="Hackathon Banner">
-                    </div>
-                    <div class="event-description">
-                        <h5 class="card-title">Hackathon</h5>
-                        <p class="card-text">Date: September 15, 2024</p>
-                        <p class="card-text">Join us for an exciting hackathon where you can showcase your coding skills and collaborate with peers to solve real-world problems. Don't miss this opportunity to innovate and win exciting prizes!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="event-card">
-                    <div class="event-banner" onclick="showModal(this)">
-                        <img src="/images/events/demofile.png" class="card-img-top" alt="Hackathon Banner">
-                    </div>
-                    <div class="event-description">
-                        <h5 class="card-title">Hackathon</h5>
-                        <p class="card-text">Date: September 15, 2024</p>
-                        <p class="card-text">Join us for an exciting hackathon where you can showcase your coding skills and collaborate with peers to solve real-world problems. Don't miss this opportunity to innovate and win exciting prizes!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="event-card">
-                    <div class="event-banner" onclick="showModal(this)">
-                        <img src="/images/events/demofile.png" class="card-img-top" alt="Hackathon Banner">
-                    </div>
-                    <div class="event-description">
-                        <h5 class="card-title">Hackathon</h5>
-                        <p class="card-text">Date: September 15, 2024</p>
-                        <p class="card-text">Join us for an exciting hackathon where you can showcase your coding skills and collaborate with peers to solve real-world problems. Don't miss this opportunity to innovate and win exciting prizes!</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more event cards as needed -->
         </div>
-    </main>
+        <div class="m-card" onclick="showModal(this)">
+            <div class="m-banner"><img src="/images/events/innovation-in-real.jpg" alt=""></div>
+            <div class="dets">
+                <h2>Innovation with Real world challenges</h2>
+                <p>28th September 2024</p>
+                <p>Prof. Kannan Iyer took us on a journey from tackling real-world challenges to the limitless potential of research and innovation. His insights into solving critical problems in nuclear safety and his personal experiences showed us that research isn't just about answers, but about asking the right questions.</p>
+            </div>
+        </div>
+        <div class="m-card" onclick="showModal(this)">
+            <div class="m-banner"><img src="/images/events/unleashing-potential.jpg" alt=""></div>
+            <div class="dets">
+                <h2>Unleashing Potential: Alumni Stories of Transformation</h2>
+                <p>11th October 2024</p>
+                <p>Hear from our brilliant alumni like Rimjhim Agarwal (Walmart), Shreya Jain (Flipkart), Aryan Shukla (Tesco), Sahaj Mistry (Miko), Jyotiraditya (Business Development), Ankit Hooda (UKG), and more! They’ll cover everything from career transitions, mental health tips, entrepreneurship, research, and the ups and downs of their unique journeys during 4 years of Btech and post IIT.</p>
+            </div>
+        </div>
+        <div class="m-card" onclick="showModal(this)">
+            <div class="m-banner"><img src="/images/events/spontaneous-spark.jpg" alt=""></div>
+            <div class="dets">
+                <h2>Spontaneous Spark: Extempore Debate Contest</h2>
+                <p>15th November 2024</p>
+                <p>The MESH Club invites you to participate in "Spontaneous Sparks", our exciting extempore debate event. Test your quick thinking and speaking skills while competing for amazing prizes!</p>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Modal for Enlarged Image -->
     <div id="imageModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="hideModal()">&times;</span>
-            <img id="modalImage" src="" alt="Enlarged Banner">
+            <div class="modal-image">
+                <img id="modalImage" src="" alt="Enlarged Banner">
+            </div>
             <div class="instruction">Press <b>Esc</b> to close</div>
         </div>
     </div>

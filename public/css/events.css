@@ -1,38 +1,59 @@
-/* Event Card Container */
-.event-card {
-    display: flex; /* Use flexbox to layout children side by side */
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    margin-bottom: 20px; /* Ensure spacing between cards */
-    max-width: 1200px; /* Increase max-width */
-    margin: 0 auto; /* Center align the card horizontally */
-    padding: 15px; /* Increase padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Banner Image Styles */
-.event-banner {
-    flex: 1; /* Take up equal space as description */
-    overflow: hidden; /* Ensure no overflow */
-    cursor: pointer; /* Indicate clickable */
+body {
+    background-color: #E3E6E6;
 }
 
-.event-banner img {
-    width: 100%; /* Make image responsive */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 225px; /* Adjust max-height */
-    object-fit: cover; /* Cover the area of the div */
-}
-
-/* Description Styles */
-.event-description {
-    flex: 2; /* Take up more space than the banner */
-    padding: 1.5rem; /* Increase padding */
+.m-cards {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2vw;
+    min-height: 100%;
+    width: 80vw;
+    margin: 5vw 20vw;
+    position: relative;
+}
+
+.m-card {
+    width: 60vw;
+    min-height: 18vw;
+    padding: 2vw;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+
+.m-card .m-banner {
+    width: 15vw;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.m-card .m-banner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.m-card .dets {
+    max-width: 40vw;
+}
+
+.m-card .dets h2 {
+    font-weight: 600;
+    font-family: 'Poppins';
+    font-size: 2vw;
 }
 
 /* Modal Styling */
@@ -51,10 +72,10 @@
 
 .modal-content {
     position: relative;
-    max-width: 80vw; /* Set max width */
+    max-width: 50vw; /* Set max width */
     max-height: 80vh; /* Set max height */
     background: #fff;
-    padding: 10px;
+    padding: 2vw;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -62,10 +83,13 @@
     align-items: center;
 }
 
+.modal-content .modal-image {
+    height: 75vh;
+    max-width: max-content;
+}
+
 .modal-content img {
-    width: 32rem; 
-    height: auto; 
-    max-width: 100%;
+    width: 32rem;
     max-height: 100%;
 }
 

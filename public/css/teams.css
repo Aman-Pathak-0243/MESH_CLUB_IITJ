@@ -147,7 +147,7 @@ body {
     transform: scale(1.1);
 }
 
-@media (width < 800px) {
+@media (width < 1000px) {
     .cards {
         flex-direction: column;
     }
@@ -157,10 +157,23 @@ body {
         height: 25vw;
     }
 
+    .teamcard h1 {
+        font-size: 5vw;
+    }
+
+    .teamcard span {
+        font-size: 2vw;
+    }
+
+    .teamcard .social-icons a {
+        height: 5vw;
+        width: 5vw;
+        font-size: 3vw;
+    }
+
     .row .subteams:nth-child(3) .teamcard:nth-child(1) .image img,
     .row .subteams:last-child .teamcard:nth-child(2) .image img {
         align-items: start;
         object-position: top;
-        background-color: red;
     }
 }

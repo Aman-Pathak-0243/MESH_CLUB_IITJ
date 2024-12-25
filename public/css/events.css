@@ -47,7 +47,11 @@ body {
 }
 
 .m-card .dets {
-    max-width: 40vw;
+    width: 40vw;
+}
+
+.m-card .dets p {
+    font-size: 1vw;
 }
 
 .m-card .dets h2 {
@@ -113,21 +117,31 @@ body {
 }
 
 /* Adjustments for smaller screens */
-@media (max-width: 768px) {
-    .event-card {
-        flex-direction: column; /* Stack children vertically */
-        padding: 10px; /* Adjust padding for smaller screens */
+@media (width < 1000px) {
+    .m-cards {
+        margin: 5vw 10vw;
     }
 
-    .event-banner {
-        width: 100%; /* Make the banner full width */
+    .m-card {
+        width: 80vw;
+        flex-direction: column;
+        padding: 5vw;
+        gap: 5vw
     }
 
-    .event-banner img {
-        max-height: 150px; /* Adjust max-height for smaller screens */
+    .m-card .m-banner {
+        width: 40vw;
     }
 
-    .event-description {
-        padding: 1rem; /* Adjust padding for smaller screens */
+    .m-card .dets {
+        width: 100%;
+    }
+
+    .m-card .dets h2 {
+        font-size: 5vw;
+    }
+
+    .m-card .dets p {
+        font-size: 2.8vw;
     }
 }

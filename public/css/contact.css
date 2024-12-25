@@ -59,6 +59,12 @@ body {
     font-size: 1.25vw;
 }
 
+#address-line-2 {
+    position: absolute;
+    top: 54%;
+    left: 17.5%;
+}
+
 .contact-info .info i {
     margin-right: 2vw;
     font-size: 1.4vw;
@@ -239,10 +245,17 @@ body {
 
     .contact-info .info, .contact-info {
         padding: 2vw 5vw;
+        margin: 0;
     }
 
     .contact-info .info p {
         font-size: 3vw;
+        position: relative;
+        z-index: 2;
+    }
+
+    #address-line-2 {
+        top: 70%;
     }
 
     .contact-info .info p i {
@@ -279,8 +292,10 @@ body {
     }
 
     .form form input[type="submit"] {
-        margin: 4vw 0 0 auto;
+        margin: 0;
+        margin-bottom: 7vw;
         font-size: 3vw;
+        padding: 2vw 0;
     }
 
     .form form textarea {

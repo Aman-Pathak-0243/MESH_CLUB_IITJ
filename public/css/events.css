@@ -9,6 +9,14 @@ body {
     background-color: #E3E6E6;
 }
 
+body > h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 8vw;
+    font-weight: 600;
+    margin-top: 5vw;
+    text-align: center;
+}
+
 .m-cards {
     display: flex;
     flex-direction: column;
@@ -114,6 +122,23 @@ body {
     transform: translateX(-50%);
     font-size: 16px;
     color: #666;
+}
+
+.link-container {
+    height: 28vh;
+    display: flex;
+    justify-content: center;
+}
+
+.link-container a {
+    height: max-content;
+    width: max-content;
+    background-color: #00949D;
+    padding: 1vw 2vw;
+    border-radius: 10px;
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: white;
 }
 
 /* Adjustments for smaller screens */

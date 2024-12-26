@@ -38,7 +38,7 @@ body > h1 {
     overflow: hidden;
     display: flex;
     align-items: center;
-    padding: 1vw 3vw;
+    padding: 1vw 2vw;
     gap: 2vw;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -68,6 +68,14 @@ body > h1 {
     position: relative;
 }
 
+.badge {
+    font-size: 1vw;
+    letter-spacing: 0;
+    position: absolute;
+    top: 13%;
+    left: 102%;
+}
+
 .m-card .dets p {
     font-size: 1.24vw;
 }
@@ -77,6 +85,11 @@ body > h1 {
     margin-right: 0.8vw;
     position: relative;
     top: 0.15vw;
+}
+
+.m-card .dets a {
+    text-decoration: none;
+    color: black;
 }
 
 .m-card:hover .image {

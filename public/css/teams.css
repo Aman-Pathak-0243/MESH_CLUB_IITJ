@@ -7,7 +7,7 @@ body {
     background-color: #E3E6E6;
 }
 
-.container > h2 {
+main > h2 {
     font-family: 'Bebas Neue';
     font-weight: 600;
     font-size: 10vw;
@@ -15,14 +15,14 @@ body {
     margin-top: 8vw;
 }
 
-.container > h2 span {
+main > h2 span {
     position: absolute;
     color: #00949D;
     font-weight: 500;
     font-size: 15vw;
     font-family: 'Maghrib', sans-serif;
     top: -75%;
-    left: 38%;
+    left: 40%;
     text-shadow: 5px 20px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -30,7 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2vw;
-    margin: 5vw 0;
+    margin: 5vw 10vw;
 }
 
 /* Ensure no transition effects on the teamcard itself */
@@ -48,7 +48,7 @@ body {
 
 .teamcard .image {
     height: 90%;
-    width: 30%;
+    width: max-content;
     background-color: black;
     overflow: hidden;
     display: flex;
@@ -60,7 +60,7 @@ body {
 
 .teamcard .image img {
     width: 100%;
-    height: 150%;
+    height: 100%;
     object-fit: cover;
     transition: transform 0.2s ease-in-out;
 }
@@ -176,4 +176,11 @@ body {
         align-items: start;
         object-position: top;
     }
+}
+
+@media (width > 1500px) {
+    /* .row {
+        margin: 0;
+        background-color: red;
+    } */
 }

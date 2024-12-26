@@ -71,3 +71,14 @@
 .img-fluid{
     height: 500px !important;
 }
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+}
+
+.row * {
+    margin: 0;
+}

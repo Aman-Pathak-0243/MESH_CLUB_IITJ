@@ -1,11 +1,12 @@
 {
   "name": "mesh_club_website",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "app.js", 
   "scripts": {
-  "start": "node app.js"
-}
-,
+    "start": "node app.js",  
+    "dev": "nodemon app.js",  
+    "build": "echo 'No build step required for serverless function'"
+  },
   "keywords": [],
   "author": "Aman Pathak",
   "license": "ISC",
@@ -14,9 +15,9 @@
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
-    "nodemailer": "^6.9.14"
+    "serverless-http": "^2.7.0"  
   },
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9"  
   }
 }

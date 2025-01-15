@@ -3,6 +3,7 @@ const path = require('path');
 const app = express();
 const events = require("./routes/events");
 const teams = require("./routes/teams");
+require("dotenv").config();
 
 // Middleware
 
@@ -71,5 +72,9 @@ app.get("/apply_guest", (req, res) => {
 // Start server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(
+    `Server is running on ${
+      process.env.NODE_ENV === "production" ? "production" : "http://localhost"
+    }:${PORT}`
+  );
 });

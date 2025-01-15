@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upcoming Events - MESH Club</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/events.css">
     <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
@@ -12,12 +13,30 @@
 </head>
 <body>
     <%- include('partials/navbar') %>
+<header class="header">
+        <h1>Upcoming Event(s)</h1>
+    </header>
 
-
-    <h1>Link to upcoming Events</h1>
-
-    <div class="link-container">
-        <a href="" style="margin-top: 2vw; margin-bottom: 10vw;">Upcoming Events</a>
+    <hr style="width: 70vw; margin: 0 15vw;">
+    <div class="m-cards">
+        <div class="m-card" onclick="showModal(this)">
+            <div class="m-banner"><img src="/images/events/demofile.png" alt=""></div>
+            <div class="dets">
+                <h2>Business Brilliance: A Case Study Showdown</h2>
+                <h3><b>Venue: Classroom 208 (old academic block)</b></h3>
+                <p><b>Date: </b>18 January,2025</p>
+                <p><b>🏆 Prizes for The top 3 Teams :</b> Books on leadership, strategy, and innovation! <hr>
+📚 <b>1st Place:</b> The Strategist's Choice <br>
+📚 <b>2nd Place:</b> The Innovator's Award <br>
+📚 <b>3rd Place:</b> The Visionary's Prize <hr></p>
+                <p><b>Objective :- <br></b>
+                    The primary objective of this Case Study Competition is to provide participants with an 
+opportunity to critically analyze and address complex business challenges faced by major 
+companies in rapidly evolving industries. By focusing on large-scale organizations such as 
+Meta, Google, and Netflix, participants will develop strategic solutions that balance 
+innovation, financial sustainability, operational e ciency, and stakeholder management.</p>
+            </div>
+        </div>
     </div>
 
 

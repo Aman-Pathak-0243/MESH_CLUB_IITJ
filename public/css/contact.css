@@ -227,7 +227,20 @@ body {
     border-radius: 10px;
     margin-left: auto
 }
-
+.apply-btn {
+    /* margin-left: 37%; */
+}
+button {
+    background-color: #e3ea53;
+    color: rgb(46, 16, 16);
+    padding: 0.8vw 2vw;
+    font-size: 1.3vw;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 4vw;
+}
 @media (width < 1000px) {
     .cont {
         flex-direction: column;
@@ -238,7 +251,13 @@ body {
     .contact-info, .form {
         width: 100%;
     }
+    button {
+        font-size: 5vw;
+    }
 
+    /* .apply-btn {
+        margin-left: 30%;
+    } */
     .contact-info h1 {
         font-size: 7vw;
     }

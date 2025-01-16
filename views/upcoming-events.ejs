@@ -10,7 +10,51 @@
     <link rel="stylesheet" href="/css/events.css">
     
     <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+<style>
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
+    .banner img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .form-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .apply-btn {
+        text-decoration: none;
+    }
+
+    .register-btn {
+        background-color: #007BFF;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .register-btn:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+    }
+</style>
 </head>
 <body>
     <%- include('partials/navbar') %>
@@ -21,28 +65,40 @@
     <hr style="width: 70vw; margin: 0 15vw;">
     <div class="m-cards">
         <div class="m-card" onclick="showModal(this)">
-            <div class="m-banner"><img src="/images/events/18janposter.webp" alt=""></div>
+            <div class="flex-container">
+    <div class="banner">
+        <img src="/images/events/18janposter.webp" alt="Event Poster">
+    </div>
+    <div class="form-container">
+        <a href="https://forms.gle/tPRMy2V88xLYhMGY8" class="apply-btn">
+            <button class="register-btn">Register Now</button>
+        </a>
+    </div>
+</div>
+
+
+
             <div class="dets">
                 <h2>Business Brilliance: A Case Study Showdown</h2>
                 <h3><b>Venue: Classroom 208 (old academic block)</b></h3>
-                <p><b>Date: </b>18 January,2025</p>
+                <p><b>Date: </b>18 January, 2025</p>
                 <p><b>🏆 Prizes for The top 3 Teams :</b> Books on leadership, strategy, and innovation! <hr>
-📚 <b>1st Place:</b> The Strategist's Choice <br>
-📚 <b>2nd Place:</b> The Innovator's Award <br>
-📚 <b>3rd Place:</b> The Visionary's Prize <hr></p>
+                    📚 <b>1st Place:</b> The Strategist's Choice <br>
+                    📚 <b>2nd Place:</b> The Innovator's Award <br>
+                    📚 <b>3rd Place:</b> The Visionary's Prize <hr>
+                </p>
                 <p><b>Objective :- <br></b>
                     The primary objective of this Case Study Competition is to provide participants with an 
-opportunity to critically analyze and address complex business challenges faced by major 
-companies in rapidly evolving industries. By focusing on large-scale organizations such as 
-Meta, Google, and Netflix, participants will develop strategic solutions that balance 
-innovation, financial sustainability, operational e ciency, and stakeholder management.</p>
+                    opportunity to critically analyze and address complex business challenges faced by major 
+                    companies in rapidly evolving industries. By focusing on large-scale organizations such as 
+                    Meta, Google, and Netflix, participants will develop strategic solutions that balance 
+                    innovation, financial sustainability, operational efficiency, and stakeholder management.
+                </p>
+                
             </div>
-<br/><div class="form">
-           
-            
-            <a href="https://forms.gle/tPRMy2V88xLYhMGY8" class="apply-btn"><button> Register Now</button></a>
         </div>
-        </div>
+
+
             
     </div>
 

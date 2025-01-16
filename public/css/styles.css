@@ -538,3 +538,17 @@ footer .logo img {
         font-size: 0.9rem;
     }
 }
+
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 30px; /* Adjust logo size for smaller screens */
+    }
+    .navbar-nav .nav-link {
+        font-size: 14px; /* Smaller font for better fit */
+        padding: 10px; /* Add padding for touch targets */
+    }
+    .dropdown-menu {
+        font-size: 14px; /* Match dropdown menu font size */
+    }
+}

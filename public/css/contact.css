@@ -227,18 +227,16 @@ body {
     border-radius: 10px;
     margin-left: auto
 }
-.apply-btn {
-    /* margin-left: 37%; */
-}
+
 button {
-    background-color: #e3ea53;
+    /* background-color: #e3ea53;
     color: rgb(46, 16, 16);
     padding: 0.8vw 2vw;
     font-size: 1.3vw;
     font-family: 'Poppins', sans-serif;
     border: 2px solid black;
     outline: none;
-    border-radius: 10px;
+    border-radius: 10px; */
     margin-top: 4vw;
 }
 @media (width < 1000px) {
@@ -255,9 +253,7 @@ button {
         font-size: 5vw;
     }
 
-    /* .apply-btn {
-        margin-left: 30%;
-    } */
+  
     .contact-info h1 {
         font-size: 7vw;
     }
@@ -320,4 +316,25 @@ button {
     .form form textarea {
         font-size: 3vw;
     }
+}
+
+
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 12px 20px; /* Padding for the button */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+button:active {
+    background-color: #3e8e41; /* Even darker green when clicked */
+    transform: scale(0.98); /* Slightly shrink when clicked */
 }
